@@ -12,7 +12,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 import com.example.jugsoomarket.Dao.ItemDao;
 import com.example.jugsoomarket.ViewModel.item;
 
-@Database(entities = {item.class}, version = 1)
+@Database(entities = {item.class}, version = 1, exportSchema = false)
 public abstract class itemDatabase extends RoomDatabase {
     private static itemDatabase instance;
 
